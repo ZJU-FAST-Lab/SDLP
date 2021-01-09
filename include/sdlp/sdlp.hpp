@@ -368,8 +368,8 @@ inline int wedge(const double (*halves)[2],
 }
 
 /*
-    * return the minimum on the projective line
-    */
+* return the minimum on the projective line
+*/
 inline int lp_base_case(const double (*halves)[2], /* halves --- half lines */
                         int m,                     /* m      --- terminal marker */
                         const double n_vec[2],     /* n_vec  --- numerator funciton */
@@ -531,33 +531,33 @@ inline int linfracprog(const double *halves, /* halves  --- half spaces */
                        int *prev,            /* prev    --- array of indices into halves */
                        int max_size)         /* max_size --- size of halves array */
 /*
-    **
-    ** half-spaces are in the form
-    ** halves[i][0]*x[0] + halves[i][1]*x[1] + 
-    ** ... + halves[i][d-1]*x[d-1] + halves[i][d]*x[d] >= 0
-    **
-    ** coefficients should be normalized
-    ** half-spaces should be in random order
-    ** the order of the half spaces is 0, next[0] next[next[0]] ...
-    ** and prev[next[i]] = i
-    **
-    ** halves: (max_size)x(d+1)
-    **
-    ** the optimum has been computed for the half spaces
-    ** 0 , next[0], next[next[0]] , ... , prev[istart]
-    ** the next plane that needs to be tested is istart
-    **
-    ** m is the index of the first plane that is NOT on the list
-    ** i.e. m is the terminal marker for the linked list.
-    **
-    ** the objective function is dot(x,nvec)/dot(x,dvec)
-    ** if you want the program to solve standard d dimensional linear programming
-    ** problems then n_vec = ( x0, x1, x2, ..., xd-1, 0)
-    ** and           d_vec = (  0,  0,  0, ...,    0, 1)
-    ** and halves[0] = (0, 0, ... , 1)
-    **
-    ** work points to (max_size+3)*(d+2)*(d-1)/2 double space
-    */
+**
+** half-spaces are in the form
+** halves[i][0]*x[0] + halves[i][1]*x[1] + 
+** ... + halves[i][d-1]*x[d-1] + halves[i][d]*x[d] >= 0
+**
+** coefficients should be normalized
+** half-spaces should be in random order
+** the order of the half spaces is 0, next[0] next[next[0]] ...
+** and prev[next[i]] = i
+**
+** halves: (max_size)x(d+1)
+**
+** the optimum has been computed for the half spaces
+** 0 , next[0], next[next[0]] , ... , prev[istart]
+** the next plane that needs to be tested is istart
+**
+** m is the index of the first plane that is NOT on the list
+** i.e. m is the terminal marker for the linked list.
+**
+** the objective function is dot(x,nvec)/dot(x,dvec)
+** if you want the program to solve standard d dimensional linear programming
+** problems then n_vec = ( x0, x1, x2, ..., xd-1, 0)
+** and           d_vec = (  0,  0,  0, ...,    0, 1)
+** and halves[0] = (0, 0, ... , 1)
+**
+** work points to (max_size+3)*(d+2)*(d-1)/2 double space
+*/
 {
     int status;
     int i, j, imax;
