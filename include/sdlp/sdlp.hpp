@@ -11,8 +11,8 @@
  * Copyright (c) 2021 Zhepei Wang,
  *       wangzhepei@live.com
  * 1. Bug fix in "move_to_front" function that "prev[m]" is illegally accessed
- *    while "prev" originally has only m doubles. It is fixed by allocating a 
- *    "prev" with m + 1 doubles.  
+ *    while "prev" originally has only m ints. It is fixed by allocating a 
+ *    "prev" with m + 1 ints.  
  * 2. Add Eigen interface.
  * Permission is granted to modify and re-distribute this code in any manner
  * as long as this notice is preserved.  All standard disclaimers apply.
