@@ -1,2 +1,2 @@
 # SDLP
-Linear-Complexity Linear Programming for Small-Dimensional Variables
+Linear-Complexity Linear Programming for Small-Dimensional Variables (Seidel's LP Algorithm)
