@@ -708,9 +708,9 @@ inline double linprog(const Eigen::VectorXd &c,
                       const Eigen::VectorXd &b,
                       Eigen::VectorXd &x)
 /*
-    **  min cTx, s.t. Ax<=b
-    **  dim(x) << dim(b)
-    */
+**  min cTx, s.t. Ax<=b
+**  dim(x) << dim(b)
+*/
 {
     int d = c.size();
     int m = b.size() + 1;
@@ -723,7 +723,7 @@ inline double linprog(const Eigen::VectorXd &c,
 
     perm = (int *)malloc((m - 1) * sizeof(int));
     next = (int *)malloc(m * sizeof(int));
-    // original allocated size is m, here changed by m + 1 for legal tail accessing
+    /* original allocated size is m, here changed by m + 1 for legal tail accessing */
     prev = (int *)malloc((m + 1) * sizeof(int));
     halves = (double *)malloc(m * (d + 1) * sizeof(double));
     n_vec = (double *)malloc((d + 1) * sizeof(double));
