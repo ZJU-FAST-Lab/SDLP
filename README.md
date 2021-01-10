@@ -14,8 +14,9 @@ Linear-Complexity Linear Programming (LP) for Small-Dimensional Variables (Seide
 
 To solve a linear programming:
 
-    min cTx, 
-    s.t. Ax<=b,
+        min cTx, 
+        s.t. Ax<=b,
+
 where x and c are d-dimensional vectors, b an m-dimensional vector and A an m*n matrix. It is assumed that d is small (<10) while m can be arbitrary value (1<= m <= 1e8).
 
 Only one function is all you need to solve:
@@ -27,13 +28,13 @@ Only one function is all you need to solve:
 
 Input:
 
-    c: objective coefficient
-    A: constraint matrix
-    b: constraint bound
+        c: objective coefficient
+        A: constraint matrix
+        b: constraint bound
 
 Output:
 
-    x: optimal solution if solved
-    return: finite value if solved
-            -infinity if unbounded
-            infinity if infeasible
+        x: optimal solution if solved
+        return: finite value if solved
+                -infinity if unbounded
+                infinity if infeasible
