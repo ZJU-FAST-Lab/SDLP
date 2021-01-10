@@ -35,9 +35,13 @@ constexpr double prog_epsilon = 2.0e-16;
 
 enum PROG_STATE
 {
+    /* minimum attained */
     MINIMUM = 0,
+    /* no feasible region */
     INFEASIBLE,
+    /* unbounded solution */
     UNBOUNDED,
+    /* only a vertex in the solution set */
     AMBIGUOUS,
 };
 
@@ -765,9 +769,9 @@ inline double linprog(const Eigen::VectorXd &c,
                                d, opt, work, next, prev, m);
 
     /* handle states for linprog whose definitions differ from linfracprog */
-    if (status != sdlp::INFEASIBLE && status != sdlp::AMBIGUOUS)
+    if (status != sdlp::INFEASIBLE)
     {
-        if (xf(d) != 0.0 && status == sdlp::MINIMUM)
+        if (xf(d) != 0.0 && status != sdlp::UNBOUNDED)
         {
             x = xf.head(d) / xf(d);
             minimum = c.dot(x);
