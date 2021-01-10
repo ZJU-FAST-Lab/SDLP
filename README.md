@@ -4,7 +4,7 @@ Linear-Complexity Linear Programming (LP) for Small-Dimensions (Seidel's LP Algo
 
 # About
 
-1. This solver is super efficient for small-dimensional decision variables (<10), mostly encountered in computational geometry. It enjoys [__linear complexity about the constraint number__](https://dl.acm.org/doi/10.1145/2422.322418).
+1. This solver is super efficient for small-dimensional LP (<10) regardless of its constraint number, mostly encountered in computational geometry. It enjoys [__linear complexity about the constraint number__](https://dl.acm.org/doi/10.1145/2422.322418).
 
 2. The speed is at least __an order of magnitude__ faster than [GLPK](https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit) in small-dimensional LP with large constraints number.
 
