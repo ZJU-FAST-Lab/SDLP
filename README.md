@@ -10,7 +10,7 @@ Linear-Complexity Linear Programming (LP) for Small-Dimensions (Seidel's LP Algo
 
 3. This solver is adapted from the [linear-fractional programming (LFP)](https://en.wikipedia.org/wiki/Linear-fractional_programming) from Mike Hohmeyer at UC Berkerley based on [Raimund Sediel's algorithm](https://link.springer.com/article/10.1007/BF02574699). Kernel functions are reorganized. Previously-existed bugs are fixed here. An easy-to-use interface for LP via [Eigen](http://eigen.tuxfamily.org) is also added.
 
-4. Only a header file is all you need.
+4. Only [a header file](https://github.com/ZJU-FAST-Lab/SDLP/blob/main/include/sdlp/sdlp.hpp) is all you need.
 
 # Interface
 
