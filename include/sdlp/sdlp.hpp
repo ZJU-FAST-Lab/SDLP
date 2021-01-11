@@ -535,6 +535,7 @@ inline int linfracprog(const double *halves, /* halves  --- half spaces */
                        int *prev,            /* prev    --- array of indices into halves */
                        int max_size)         /* max_size --- size of halves array */
 /*
+**
 ** half-spaces are in the form
 ** halves[i][0]*x[0] + halves[i][1]*x[1] + 
 ** ... + halves[i][d-1]*x[d-1] + halves[i][d]*x[d] >= 0
