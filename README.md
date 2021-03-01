@@ -1,6 +1,6 @@
 # SDLP
 
-Linear-Complexity Linear Programming (LP) for Small-Dimensions (Seidel's LP Algorithm)
+Seidel's Algorithm: Linear-Complexity Linear Programming (LP) for Small-Dimensions
 
 # About
 
