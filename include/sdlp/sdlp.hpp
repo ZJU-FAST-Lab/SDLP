@@ -31,7 +31,7 @@
 
 namespace sdlp
 {
-constexpr double prog_epsilon = 2.0e-16;
+constexpr double prog_epsilon = 2.0e-12;
 
 enum PROG_STATE
 {
