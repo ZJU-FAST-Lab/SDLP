@@ -8,7 +8,7 @@ Seidel's LP Algorithm: Linear-Complexity Linear Programming (LP) for Small-Dimen
 
 2. The speed is __at least an order of magnitude__ faster than [GLPK](https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit) in small-dimensional LP (<10) with a large constraints number (>100).
 
-3. This solver is adapted from the [linear-fractional programming (LFP)](https://en.wikipedia.org/wiki/Linear-fractional_programming) from Mike Hohmeyer at UC Berkerley based on [Raimund Seidel's algorithm](https://link.springer.com/article/10.1007/BF02574699). Kernel functions are reorganized. Previously-existed bugs are fixed here. An easy-to-use interface for LP via [Eigen](http://eigen.tuxfamily.org) is also added.
+3. This solver is adapted from the [linear-fractional programming (LFP)](https://en.wikipedia.org/wiki/Linear-fractional_programming) from Mike Hohmeyer at UC Berkeley based on [Raimund Seidel's algorithm](https://link.springer.com/article/10.1007/BF02574699). Kernel functions are reorganized. Previously-existed bugs are fixed here. An easy-to-use interface for LP via [Eigen](http://eigen.tuxfamily.org) is also added.
 
 4. Only [a header file](https://github.com/ZJU-FAST-Lab/SDLP/blob/main/include/sdlp/sdlp.hpp) is all you need.
 
