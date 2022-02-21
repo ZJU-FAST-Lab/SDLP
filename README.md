@@ -23,10 +23,11 @@ where x and c are d-dimensional vectors, b an m-dimensional vector and A an m*d 
 
 Only one function is all you need:
 
-    double linprog(const Eigen::VectorXd &c, 
-                   const Eigen::MatrixXd &A,
-                   const Eigen::VectorXd &b,
-                   Eigen::VectorXd &x);
+    template <int d>
+    double linprog(const Eigen::Matrix<double, d, 1> &c,
+                   const Eigen::Matrix<double, -1, d> &A,
+                   const Eigen::Matrix<double, -1, 1> &b,
+                   Eigen::Matrix<double, d, 1> &x);
 
 Input:
 
